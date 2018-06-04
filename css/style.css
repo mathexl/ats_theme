@@ -22,6 +22,10 @@ header > .third{
   width: calc(100% / 3);
 }
 
+header > .third.mobile{
+  display:none;
+}
+
 header > .third > .logo {
   height:15px;
   margin:15px;
@@ -46,6 +50,23 @@ header > .third.right > a{
 
 header > .third > a.free{
   width:auto;
+}
+
+@media screen and (max-width:800px){
+  header > .third{
+    display:none;
+  }
+
+  header > .third.mobile{
+    display:inline-block;
+    width:100%;
+    border-bottom: 1px black solid;
+  }
+
+  header {
+    width: 100%;
+    height:90px;
+  }
 }
 
 header > .menu {
@@ -123,6 +144,32 @@ font-size: 10px;
   background-color:#f4f4f4;
 }
 
+.mobile {
+  display:none;
+}
+
+@media screen and (max-width:800px){
+  .subheader {
+    height:auto;
+    display: inline-block;
+  }
+
+  .subheader > div {
+    height:auto !important;
+    padding-bottom:10px;
+    width: 100% !important;
+    display: inline-block;
+  }
+
+  .mobilehide {
+    display:none !important;
+  }
+
+  .mobile {
+    display:inline-block;
+  }
+}
+
 .subheader > div > a{
   float:left;
   padding:0px 10px;
@@ -181,6 +228,16 @@ font-size: 10px;
   position: relative;
   float:left;
   border-bottom:1px black solid;
+}
+
+@media screen and (max-width:800px){
+  #productSnapshot  > .image{
+    width:100%;
+  }
+
+  #productSnapshot  > .info{
+    width:100%;
+  }
 }
 
 #productSnapshot  > .info > .heading{
@@ -287,6 +344,13 @@ background-position: center;
   position: relative;
 }
 
+@media screen and (max-width:800px){
+  #productShowcase > .product {
+    width:100%;
+  }
+}
+
+
 #productShowcase > .product > .bottomBar{
   width:100%;
   height:40px;
@@ -338,6 +402,8 @@ background-position: center;
   margin-top:100px;
   display:inline-block;
 }
+
+
 
 #shopping > p{
   font-size:13px;
@@ -427,6 +493,26 @@ background-position: center;
   border-radius:100px;
 }
 
+@media screen and (max-width:800px){
+  #shopping {
+    width: 90%;
+    margin-left:5%;
+    margin-right:5%;
+  }
+
+  #shopping > .latter > .checkout{
+    padding: 10px 90px;
+    color:white;
+    width:100%;
+    box-sizing: border-box;
+    text-align:center;
+    margin-top:50px;
+    font-size:11px;
+    background-color:black;
+    border-radius:100px;
+  }
+}
+
 #episodes {
   width:100%;
   display:inline-block;
@@ -444,6 +530,12 @@ background-position: center;
   background-position: top center;
   background-repeat:no-repeat;
   border-right:1px black solid;
+}
+
+@media screen and (max-width:800px){
+  #episodes > .episode{
+    width:100%;
+  }
 }
 
 #contact {
