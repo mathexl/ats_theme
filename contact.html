@@ -1,0 +1,95 @@
+<head>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script></script>
+</head>
+<body>
+  <header>
+    <div class="menu" id="menu">
+      <div class="item">
+        <div class="tag">Shop Online</div>
+        <i class="fa fa-chevron-down chevron"></i>
+      </div>
+      <div class="item">
+        <div class="tag">Sunglasses</div>
+      </div>
+      <div class="item">
+        <div class="tag">Projects</div>
+      </div>
+      <div class="item">
+        <div class="tag">Customer Care</div>
+      </div>
+      <div class="item">
+        <div class="tag">Social</div>
+      </div>
+    </div>
+    <div class="third">
+      <img class="logo" src="./image/ats.png">
+    </div>
+    <div class="third">
+      <a>Shop Online</a>
+      <a>Projects</a>
+      <a>About</a>
+    </div>
+    <div class="third right">
+      <a class="free" id="menuToggle"><i class="fa fa-bars"></i></a>
+      <a class="free">Bag</a>
+
+    </div>
+  </header>
+  <div class="subheader">
+    <div class="fullcenter">
+      <a >General Information </a>
+      <a >Shipping </a>
+      <a >Return and Exchange </a>
+      <a >After-sales Service </a>
+      <a >Terms and Condition </a>
+      <a >Contact</a>
+    </div>
+  </div>
+  <div id="contact">
+    <p>CONTACT</p>
+    <br><br>
+    <p>We will get back to you personally during business hours.</p>
+    <p class="grey">Customer Servince Language: English</p>
+    <p class="grey">Our business hours are from 9:00am to 6:00pm Monday to Friday</p>
+    <br>
+    <p>Classification</p>
+    <div class="select">
+      Please select
+    </div>
+    <br>
+
+    <p>Shipping Country / Region</p>
+    <div class="select">
+      Please select your shipping country
+    </div>
+    <br>
+    <p>Subject</p>
+    <input class="input">
+    <br><br>
+    <p>Message</p>
+    <textarea></textarea>
+    <br><br>
+    Submit
+    <br><br><br><br><br><br>
+  </div>
+  <script>
+  $(document).click(function(){
+    if(window.handled != true){
+      $("#menu").hide();
+    }
+    window.handled = false;
+  });
+  $("#menuToggle").click(function(){
+    window.handled = true;
+    $("#menu").toggle();
+  });
+  </script>
+
+</body>

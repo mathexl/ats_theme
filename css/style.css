@@ -1,0 +1,489 @@
+body {
+  margin:0px;
+  padding:0px;
+  position: relative;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+header {
+  width: 100%;
+  height:45px;
+  background-color:white;
+  border-bottom:1px black solid;
+  float:left;
+}
+
+header > .third{
+  float:left;
+  height: 45px;
+  border-right:1px black solid;
+  box-sizing: border-box;
+  padding-left:40px;
+  padding-right:40px;
+  width: calc(100% / 3);
+}
+
+header > .third > .logo {
+  height:15px;
+  margin:15px;
+  margin-left:-20px;
+}
+
+header > .third > a{
+  width: calc(100% / 3);
+  float:left;
+  height:45px;
+  padding:15px;
+  font-size:13px;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+header > .third.right > a{
+  float:right;
+  padding-right:0px;
+}
+
+header > .third > a.free{
+  width:auto;
+}
+
+header > .menu {
+position: absolute;
+width:300px;
+top:45px;
+right:0px;
+background-color:white;
+display:none;
+border-top:1px black solid;
+border-left:1px black solid;
+border-right:1px black solid;
+z-index:4;
+}
+
+header > .menu > .item{
+width:300px;
+
+height:45px;
+border-bottom:1px black solid;
+display:inline-block;
+position: relative;
+}
+
+header > .menu > .item:hover{
+  cursor: pointer;
+  background-color:#eee;
+}
+
+header > .menu > .item > .tag{
+position: absolute;
+width:200px;
+left:50px;
+top:16px;
+font-size:12px;
+text-align: center;
+}
+
+header > .menu > .item > .chevron{
+position: absolute;
+top:18px;
+right:18px;
+font-size: 10px;
+
+}
+
+.subheader {
+  width: 100%;
+  height:45px;
+  background-color:white;
+  border-bottom:1px black solid;
+  float:left;
+}
+
+.subheader > div{
+  float:left;
+  height: 45px;
+  border-right:1px black solid;
+  box-sizing: border-box;
+  padding-left:10px;
+  padding-right:20px;
+  width: calc(100% / 2);
+  background-color:#f4f4f4;
+}
+
+.subheader > .fullcenter{
+  float:left;
+  height: 45px;
+  border-right:1px black solid;
+  box-sizing: border-box;
+  padding-left:20px;
+  padding-right:20px;
+  width: 100%;
+  text-align:center;
+  background-color:#f4f4f4;
+}
+
+.subheader > div > a{
+  float:left;
+  padding:0px 10px;
+  padding-top:14px;
+  font-size:13px;
+}
+
+.subheader > .fullcenter > a{
+  float:none;
+  display: inline-block;
+}
+
+.subheader > div > a.chosen{
+  text-decoration: underline;
+}
+
+#productSnapshot {
+  width:auto;
+  height:calc(100vh - 48px);
+  display:inline-block;
+  overflow:scroll;
+  white-space:nowrap;
+  width:100%;
+}
+
+#productSnapshot.wrap {
+  white-space: normal;
+}
+
+#productSnapshot  > .image{
+  width:calc(50vw + 4px);
+  display: inline-block;
+  height:calc(100vh - 50px);
+  background-size: cover;
+  border-right:1px black solid;
+  box-sizing: border-box;
+  background-position: center;
+  display:inline-block;
+  margin:0px;
+  margin-left:-4px;
+}
+
+#productSnapshot  > .info{
+  width:calc(50vw + 4px);
+  display: inline-block;
+  height:calc(100vh - 45px);
+  background-size: cover;
+  border-right:1px black solid;
+  box-sizing: border-box;
+  background-position: center;
+  display:inline-block;
+  margin:0px;
+  margin-left:-4px;
+  text-align: left;
+  padding:40px 60px;
+  position: relative;
+  float:left;
+  border-bottom:1px black solid;
+}
+
+#productSnapshot  > .info > .heading{
+  font-size:19px;
+  width: 85%;
+}
+
+#productSnapshot  > .info > .price{
+  font-size:14px;
+  width: 85%;
+}
+
+#productSnapshot  > .info > p{
+  font-size:13px;
+  width: 85%;
+  white-space:normal;
+}
+
+
+  #productSnapshot  > .info > .sizing{
+    border-top:1px black solid;
+    font-size:13px;
+    width: 85%;
+    white-space:normal;
+    padding-top:20px;
+  }
+
+  #productSnapshot  > .info > .sizing > .icon{
+    float:left;
+    width:20px;
+    height:20px;
+    margin-right:10px;
+  }
+
+  #productSnapshot  > .info > .sizing > .contents{
+    width:calc(100% - 30px);
+    font-size:13px;
+  }
+
+#productSnapshot  > .info > .atb{
+  background-color: black;
+color: white;
+text-align: center;
+position: relative;
+display: inline-block;
+border-radius: 55px;
+width: 226px;
+padding: 13px 21px;
+margin-top:20px;
+font-size: 12px;
+}
+
+#productSnapshot  > .info > .productImage{
+  width:80%;
+  height:calc(100vh - 65px);
+  left:10%;
+  top:10px;
+  position: absolute;
+  background-size:cover;
+  background-position: center;
+
+}
+
+
+#productSnapshot  > .info > .allcolors{
+  margin-top:40px;
+  text-decoration:underline;
+  font-size:12px;
+}
+
+
+#productSnapshot  > .info > .versions{
+margin-top:30px;
+text-decoration:underline;
+font-size:12px;
+}
+
+#productSnapshot  > .info > .versions > .version{
+height:90px;
+width:60px;
+float:left;
+margin-right:10px;
+background-size: contain;
+background-repeat:no-repeat;
+background-position: center;
+}
+
+
+#productShowcase {
+  height:calc(100vh - 90px);
+  display:inline-block;
+  overflow:scroll;
+  white-space:nowrap;
+  width:100%;
+}
+
+#productShowcase > .product {
+  width:calc(100vw / 3);
+  height: calc(100vh - 90px);
+  float:left;
+  background-color:white;
+  border-right:1px black solid;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#productShowcase > .product > .bottomBar{
+  width:100%;
+  height:40px;
+  position: absolute;
+  bottom:0px;
+  left:0px;
+  border-top:1px black solid;
+  border-right:1px black solid;
+}
+
+#productShowcase > .product > .image{
+  width:100%;
+  height: calc(100vh - 90px);
+  position: absolute;
+  top:0px;
+  left:0px;
+  background-position: center;
+  background-size:80%;
+  background-repeat:no-repeat;
+}
+
+#productShowcase > .product > h1{
+  width:100%;
+  height: 40px;
+  position: absolute;
+  bottom:60px;
+  text-align: center;
+  font-size: 11px;
+  left:0px;
+  font-weight: 100;
+
+}
+
+#productShowcase > .product > .price{
+  width:100%;
+  height: 40px;
+  position: absolute;
+  bottom:48px;
+  text-align: center;
+  font-size: 14px;
+  left:0px;
+  font-weight: 100;
+}
+
+#shopping {
+  width: 50%;
+  margin-left:25%;
+  margin-right:25%;
+  margin-top:100px;
+  display:inline-block;
+}
+
+#shopping > p{
+  font-size:13px;
+}
+
+#shopping > .items {
+  width:100%;
+  border-top:1px black solid;
+  border-bottom: 1px black solid;
+  padding-top:20px;
+  padding-bottom:20px;
+  margin-top:20px;
+  position: relative;
+}
+
+#shopping > .items > .total{
+  right:0px;
+  top:20px;
+  position: absolute;
+  font-weight:600;
+  font-size:12px;
+}
+
+#shopping > .items > .item{
+  width:100%;
+  height:120px;
+}
+
+#shopping > .items > .item > .image{
+  width:80px;
+  height:120px;
+  background-size:contain;
+  background-position: center;
+  background-color:black;
+  background-repeat: no-repeat;
+  float:left;
+}
+
+#shopping > .items > .item > .mains{
+  margin-left:30px;
+  width:100px;
+  height:120px;
+  float:left;
+}
+
+#shopping > .items > .item > .mains > .heading{
+  font-size:12px;
+}
+
+#shopping > .items > .item > .mains > .price{
+  font-size:9px;
+  margin-top:5px;
+}
+
+#shopping > .items > .item > .mains > .remove{
+  font-size:9px;
+  text-decoration: underline;
+  margin-top:20px;
+}
+
+#shopping > .latter {
+  width:100%;
+  height:80px;
+  margin-top:10px;
+}
+
+#shopping > .latter > .links{
+  float:left;
+  font-size:11px;
+}
+
+#shopping > .latter > .links > .link{
+  font-size:11px;
+  margin-top:9px;
+  text-decoration: underline;
+  float:left;
+  margin-right:20px;
+  display: inline-block;
+}
+
+#shopping > .latter > .checkout{
+  float:right;
+  padding: 10px 90px;
+  color:white;
+  font-size:11px;
+  background-color:black;
+  border-radius:100px;
+}
+
+#episodes {
+  width:100%;
+  display:inline-block;
+}
+
+#episodes > .episode{
+  width:50%;
+  height:calc(50vh - 22.5px);
+  float:left;
+  border-bottom:1px black solid;
+  float:left;
+  box-sizing: border-box;
+  background-size:cover;
+
+  background-position: top center;
+  background-repeat:no-repeat;
+  border-right:1px black solid;
+}
+
+#contact {
+  width: 70%;
+  margin-left:15%;
+  margin-right:15%;
+  font-size:12px;
+  margin-top:50px;
+  display:inline-block;
+}
+
+#contact .grey {
+  color:#888;
+}
+
+#contact .select {
+  width:100%;
+  height:44px;
+  padding:12px;
+  font-size:14px;
+  box-sizing: border-box;
+  border: 1px black solid;
+}
+
+#contact input {
+  width:100%;
+  height:44px;
+  padding:12px;
+  font-size:14px;
+  box-sizing: border-box;
+  outline:none;
+  border: 1px black solid;
+}
+
+#contact textarea {
+  width:100%;
+  height:244px;
+  padding:12px;
+  font-size:14px;
+  box-sizing: border-box;
+  outline:none;
+  border: 1px black solid;
+}
