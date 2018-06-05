@@ -52,6 +52,12 @@ header > .third > a.free{
   width:auto;
 }
 
+header > .third > a.free > img{
+  height: 9px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
 @media screen and (max-width:800px){
   header > .third{
     display:none;
@@ -206,11 +212,15 @@ font-size: 10px;
 
 #productSnapshot {
   width:auto;
-  height:calc(100vh - 48px);
+  height:calc(100vh - 50px);
   display:inline-block;
   overflow:scroll;
   white-space:nowrap;
   width:100%;
+}
+
+#productSnapshot.nooverflow{
+  overflow: hidden;
 }
 
 #productSnapshot.grow{
