@@ -29,15 +29,15 @@ header > .third.mobile{
 header > .third > .logo {
   height:15px;
   margin:15px;
-  margin-left:-20px;
+  margin-left:-15px;
 }
 
 header > .third > a{
   width: calc(100% / 3);
   float:left;
   height:45px;
-  padding:15px;
-  font-size:13px;
+  padding:14px;
+  font-size:12px;
   box-sizing: border-box;
   text-align: center;
 
@@ -116,6 +116,7 @@ font-size: 10px;
 .subheader {
   width: 100%;
   height:45px;
+  font-size:11px;
   background-color:white;
   border-bottom:1px black solid;
   float:left;
@@ -129,7 +130,7 @@ font-size: 10px;
   padding-left:10px;
   padding-right:20px;
   width: calc(100% / 2);
-  background-color:#f4f4f4;
+  background-color:white;
 }
 
 .subheader > .fullcenter{
@@ -141,7 +142,11 @@ font-size: 10px;
   padding-right:20px;
   width: 100%;
   text-align:center;
-  background-color:#f4f4f4;
+  background-color:white;
+}
+
+.subheader > .forcehalf{
+  width:50% !important;
 }
 
 .mobile {
@@ -170,11 +175,24 @@ font-size: 10px;
   }
 }
 
+.finalfooter {
+  width: 100%;
+  height:45px;
+  font-size:12px;
+  background-color:white;
+  border-top:1px black solid;
+  float:left;
+  padding-top:14px;
+  padding-left:15px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
 .subheader > div > a{
   float:left;
   padding:0px 10px;
   padding-top:14px;
-  font-size:13px;
+  font-size:12px;
 }
 
 .subheader > .fullcenter > a{
@@ -193,6 +211,10 @@ font-size: 10px;
   overflow:scroll;
   white-space:nowrap;
   width:100%;
+}
+
+#productSnapshot.grow{
+  height: auto;
 }
 
 #productSnapshot.wrap {
@@ -283,7 +305,7 @@ color: white;
 text-align: center;
 position: relative;
 display: inline-block;
-border-radius: 55px;
+border-radius: 0px;
 width: 226px;
 padding: 13px 21px;
 margin-top:20px;

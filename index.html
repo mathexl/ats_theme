@@ -58,6 +58,10 @@
     <div class="image" style="background-image:url('./image/2.png')"></div>
     <div class="image" style="background-image:url('./image/3.png')"></div>
   </div>
+
+  <div class="finalfooter">
+    © 2018 AGAINST THE SUN
+  </div>
   <script>
   $(document).click(function(){
     if(window.handled != true){
@@ -66,6 +70,7 @@
     window.handled = false;
   });
   $("#menuToggle").click(function(){
+    console.log("toggled");
     window.handled = true;
     $("#menu").toggle();
   });
