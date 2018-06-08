@@ -26,10 +26,11 @@ header > .third.mobile{
   display:none;
 }
 
-header > .third > .logo {
+header > .third > a >  .logo {
   height:15px;
-  margin:15px;
-  margin-left:-15px;
+  margin:0px;
+  margin-left:-30px;
+  margin-top:1px;
 }
 
 header > .third > a{
@@ -189,7 +190,7 @@ font-size: 10px;
   border-top:1px black solid;
   float:left;
   padding-top:14px;
-  padding-left:15px;
+  padding-left:25px;
   display: inline-block;
   box-sizing: border-box;
 }
@@ -208,6 +209,42 @@ font-size: 10px;
 
 .subheader > div > a.chosen{
   text-decoration: underline;
+}
+
+#newHome {
+  width:auto;
+  height:calc(100vh - 50px);
+  display:inline-block;
+  overflow:scroll;
+  white-space:nowrap;
+  width:100%;
+}
+
+#newHome > .col {
+  width:29%;
+  display: inline-block;
+  height:calc(100vh - 50px);
+  border-right:1px black solid;
+  box-sizing: border-box;
+  float:left;
+  display:inline-block;
+  background-size:cover;
+  background-position: center;
+}
+
+#newHome > .col.long {
+  width:42%;
+}
+
+#newHome > .col > .halfblock{
+  width:100%;
+  height:calc(50vh - 25px);
+  border-bottom: 1px black solid;
+  box-sizing: border-box;
+}
+
+#newHome > .col > .halfblock:last-child{
+  border-bottom: 0px black solid;
 }
 
 #productSnapshot {
@@ -244,6 +281,8 @@ font-size: 10px;
   margin-left:-4px;
 }
 
+
+
 #productSnapshot  > .info{
   width:calc(50vw + 4px);
   display: inline-block;
@@ -260,6 +299,23 @@ font-size: 10px;
   position: relative;
   float:left;
   border-bottom:1px black solid;
+}
+
+
+#productSnapshot > .info:nth-last-child(1){
+  border-bottom:0px black solid;
+}
+
+#productSnapshot.even > .info:nth-last-child(2){
+  border-bottom:0px black solid;
+}
+
+#productSnapshot > .image:nth-last-child(1){
+  border-bottom:0px black solid;
+}
+
+#productSnapshot.even > .image:nth-last-child(2){
+  border-bottom:0px black solid;
 }
 
 @media screen and (max-width:800px){
@@ -433,6 +489,7 @@ background-position: center;
   margin-right:25%;
   margin-top:100px;
   display:inline-block;
+  min-height: calc(100vh - 190px);
 }
 
 
@@ -469,7 +526,7 @@ background-position: center;
   height:120px;
   background-size:contain;
   background-position: center;
-  background-color:black;
+  background-color:transparent;
   background-repeat: no-repeat;
   float:left;
 }
@@ -522,7 +579,7 @@ background-position: center;
   color:white;
   font-size:11px;
   background-color:black;
-  border-radius:100px;
+  border-radius:0px;
 }
 
 @media screen and (max-width:800px){
@@ -562,6 +619,14 @@ background-position: center;
   background-position: top center;
   background-repeat:no-repeat;
   border-right:1px black solid;
+}
+
+#episodes > .episode:nth-last-child(1){
+  border-bottom:0px black solid;
+}
+
+#episodes.even > .episode:nth-last-child(2){
+  border-bottom:0px black solid;
 }
 
 @media screen and (max-width:800px){
