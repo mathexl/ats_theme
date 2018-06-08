@@ -59,6 +59,10 @@ header > .third > a.free > img{
     cursor: pointer;
 }
 
+header > .third > .free > i{
+  color:black;
+}
+
 @media screen and (max-width:800px){
   header > .third{
     display:none;
