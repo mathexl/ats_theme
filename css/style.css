@@ -49,6 +49,10 @@ header > .third.right > a{
   padding-right:0px;
 }
 
+header > .third > a.left{
+  float:left;
+}
+
 header > .third > a.free{
   width:auto;
 }
@@ -59,7 +63,13 @@ header > .third > a.free > img{
     cursor: pointer;
 }
 
-header > .third > .free > i{
+header > .third > a.free > img.insta{
+  height:18px;
+  margin-top:-2px;
+  margin-right:5px;
+}
+
+header > .third > .free > i {
   color:black;
 }
 
@@ -240,6 +250,13 @@ font-size: 10px;
   width:42%;
 }
 
+#newHome > .col.long > .rightarrow {
+  position: absolute;
+  right: 17px;
+  font-size: 60px;
+  top: calc(75vh / 2 - 22.5px / 2 - 30px);
+}
+
 #newHome > .col > .halfblock{
   width:100%;
   height:calc(50vh - 25px);
@@ -249,6 +266,93 @@ font-size: 10px;
 
 #newHome > .col > .halfblock:last-child{
   border-bottom: 0px black solid;
+}
+
+#newHome2 {
+  width:auto;
+  height:calc(100vh - 45px);
+  display:inline-block;
+  overflow:scroll;
+  white-space:nowrap;
+  position: relative;
+  width:100%;
+}
+
+#newHome2 > .col {
+  width:50%;
+  display: inline-block;
+  height:calc(100vh - 45px);
+  border-right:1px black solid;
+  box-sizing: border-box;
+  float:left;
+  display:inline-block;
+  background-size:cover;
+  background-position: center;
+}
+
+#newHome2 > .col.long {
+  width:34%;
+  position: absolute;
+  top:calc(12.5vh - 11.25px);
+  left:33%;
+  box-sizing: border-box;
+  background-size:cover;
+  background-position:center;
+  height:calc(75vh - 22.5px);
+}
+
+@media screen and (max-width: 800px){
+  #newHome2 {
+    height:calc(100vh - 90px);
+
+  }
+
+  #newHome2 > .col {
+    height:calc(100vh - 90px);
+    border-bottom:1px black solid;
+  }
+
+  #newHome2 > .col.long {
+    width:90%;
+    left:5%;
+    top:calc(12.5vh - 29.5px);
+    height:calc(75vh - 45px);
+  }
+
+}
+
+
+#newHome2 > .col.long > .rightarrow {
+  position: absolute;
+  right: 17px;
+  font-size: 60px;
+  top: calc(75vh / 2 - 22.5px / 2 - 20px);
+}
+
+#newHome2 > .col.long > .rightarrow > img {
+  height:40px;
+}
+
+.killborderonMobile {
+  border: none !important;
+}
+
+#newHome2 > .col > .halfblock{
+  width:100%;
+  height:calc(50vh - 22.5px);
+  border-bottom: 1px black solid;
+  box-sizing: border-box;
+}
+
+#newHome2 > .col > .halfblock:last-child{
+  border-bottom: 0px black solid;
+}
+
+#newHome2 > .middleLogo{
+  position: absolute;
+  bottom:20px;
+  width:100px;
+  left:calc(50% - 53px);
 }
 
 #productSnapshot {
