@@ -1,8 +1,13 @@
+@font-face {
+  font-family: 'LiberationSans';
+  src: url('./../vendor/LiberationSans-Regular.ttf') format("truetype");
+}
+
 body {
   margin:0px;
   padding:0px;
   position: relative;
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "LiberationSans", "Helvetica", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 header {
   width: 100%;
