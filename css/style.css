@@ -15,6 +15,7 @@ header {
   background-color:white;
   border-bottom:1px black solid;
   float:left;
+  text-transform: uppercase;
 }
 
 header > .third{
