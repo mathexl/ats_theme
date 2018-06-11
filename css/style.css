@@ -147,6 +147,7 @@ font-size: 10px;
   background-color:white;
   border-bottom:1px black solid;
   float:left;
+  text-transform: uppercase;
 }
 
 .subheader > div{
